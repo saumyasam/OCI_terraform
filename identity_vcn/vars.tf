@@ -2,6 +2,6 @@ variable tenancy_ocid { default = "ocid1.tenancy.oc1..aaaaaaaa6eakkrysf6znwg73cd
 variable root_compartment_id { default = "ocid1.tenancy.oc1..aaaaaaaa6eakkrysf6znwg73cdaxxtkqyhklq37rj7dpx2scwsp2rocqj6ra" }
 variable compartment_ocid { default = "ocid1.user.oc1..aaaaaaaafje7wqfgx7lm4eejl7wgyhr6wwp4rdrmng3ynnmdajxlq7ifts3a" }
 variable region { default = "uk-london-1" }
-variable cmp-network_id { default = "oci_identity_compartment.saumyasam-prod-netmgmt-cmp01.id" }
+ 
 
 
