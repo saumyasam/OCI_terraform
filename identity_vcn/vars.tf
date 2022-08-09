@@ -23,8 +23,8 @@ variable "availability_domain_number" {
 }
 
 variable "release" {
-  description = "Reference Architecture Release (OCI Architecture Center)"
-  default     = "1.2"
+  description = "Sam Architecture Release"
+  default     = "1.0"
 }
 
 variable "igw_display_name" {
