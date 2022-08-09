@@ -14,7 +14,7 @@ resource oci_identity_compartment "saumyasam-prod-app-cmp01" {
   enable_delete = "true"
 }
 
-resource oci_identity_compartment "saumyasam-prod-netmgmt-cmp01" {
+resource oci_identity_compartment "saumyasam-prod-network-cmp01" {
   name = "saumyasam-prod-netmgmt-cmp01"
   description = "Compartment for Saumyasam Prod NW Management-Public"
   compartment_id = var.root_compartment_id
