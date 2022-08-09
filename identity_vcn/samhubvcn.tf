@@ -1,5 +1,5 @@
-## Copyright (c) 2022, Oracle and/or its affiliates. 
-## All rights reserved. The Universal Permissive License (UPL), Version 1.0 as shown at http://oss.oracle.com/licenses/upl
+## Created by Saumya Padhi. Reach me at saumya.padhi@outlook.com/ admin@saumyapadhi.com
+## DISCLAIMER: For educational purpose only, Do proper testing before using in Production.
 
 resource "oci_core_vcn" "samhub" {
   cidr_block     = var.samhub_vcn_cidr_block
