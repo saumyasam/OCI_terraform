@@ -57,7 +57,7 @@ resource "oci_core_security_list" "Sam_DB_Securitylist01" {
 
 resource "oci_core_security_list" "Sam_App_Securitylist01" {
     compartment_id = var.compartment_ocid
-    display_name = "Sam_App_Securitylist01"
+    display_name = "Sam_Pub_Securitylist01"
     vcn_id = oci_core_vcn.sampro.id
     
     egress_security_rules {
