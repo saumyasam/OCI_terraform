@@ -4,18 +4,18 @@
 variable "region" {}
       
 variable "user_ocid" {
-  default = "ocid1.user.oc1..aaaaaaaafje7wqfgx7lm4eejl7wgyhr6wwp4rdrmng3ynnmdajxlq7ifts3a"
+  default = "ocid1.user.oc1..aaaaaaaabpnrrp2dg4ge72imj6xcpvgzsz6ji2qjh3sf5ui6th7bybkasrpq"
 }        
 
 variable "tenancy_ocid" {
-  default = "ocid1.tenancy.oc1..aaaaaaaa6eakkrysf6znwg73cdaxxtkqyhklq37rj7dpx2scwsp2rocqj6ra"
+  default = "ocid1.tenancy.oc1..aaaaaaaajygawid4e5o7n6myxht4i2gg7bkgo6467in4qj5tgxnetiivj2ta"
 }
 variable "compartment_ocid" { 
- default = "ocid1.compartment.oc1..aaaaaaaawkghy6ilnmohsjpa4dq256f5c3sv3rybhfgwx3445l4s4xaelmta"
+ default = "ocid1.compartment.oc1..aaaaaaaampjobqz6bmnq4er7gz4hvframcsbjt2fgxzggymo6k2gl6usmlgq"
 }
 
 variable root_compartment_id { 
- default = "ocid1.tenancy.oc1..aaaaaaaa6eakkrysf6znwg73cdaxxtkqyhklq37rj7dpx2scwsp2rocqj6ra" 
+ default = "ocid1.tenancy.oc1..aaaaaaaajygawid4e5o7n6myxht4i2gg7bkgo6467in4qj5tgxnetiivj2ta" 
  }
 
 variable "availability_domain_name" {
@@ -38,15 +38,11 @@ variable "igw_display_name" {
 
 
 variable "drg01_display_name" {
-  default = "SAMDRG01"
+  default = "sam-drg01-gateway"
 }
 
-variable "drg01_sampro_attachment_display_name" {
-  default = "DRG01_sampro Attachment"
-}
-
-variable "drg01_samspoke_attachment_display_name" {
-  default = "DRG01_samspoke Attachment"
+variable "nat_display_name" {
+  default = "sam-nat-gateway"
 }
 
 #VCN Variables - sampro

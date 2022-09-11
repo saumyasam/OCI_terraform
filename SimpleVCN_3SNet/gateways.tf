@@ -21,7 +21,7 @@ resource "oci_core_drg" "drg01" {
 resource "oci_core_drg_attachment" "drg01_sampro_attachment" {
     drg_id = oci_core_drg.drg01.id
     vcn_id = oci_core_vcn.sampro.id
-    display_name = var.drg01_sampro_attachment_display_name
+    display_name = var.drg01_display_name
 }
 
 
@@ -36,4 +36,10 @@ resource "oci_core_default_route_table" "sampro_default_route_table" {
     defined_tags         = {"${oci_identity_tag_namespace.SaumyaPadhiTagNamespace.name}.${oci_identity_tag.SaumyaPadhiTag.name}" = var.release }
 }
 
-
+#NAT
+resource "oci_core_nat_gateway" "sampro_nat_gateway" {
+    compartment_id = var.compartment_ocid
+    vcn_id = oci_core_vcn.sampro.id
+    display_name = var.nat_display_name
+    defined_tags = {"${oci_identity_tag_namespace.SaumyaPadhiTagNamespace.name}.${oci_identity_tag.SaumyaPadhiTag.name}" = var.release }
+}
