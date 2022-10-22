@@ -1,7 +1,7 @@
 resource oci_identity_compartment "saumyasam-prod-db-cmp01" {
   name = "saumyasam-prod-db-cmp01"
   description = "Compartment for Saumyasam Prod DB"
-  compartment_id = var.root_compartment_id
+  compartment_id = var.root_compartment_id 
   defined_tags = { }
   enable_delete = "true"
 }
